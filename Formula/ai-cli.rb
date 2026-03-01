@@ -5,21 +5,21 @@
 class AiCli < Formula
   desc "Translate natural language into shell commands using AI"
   homepage "https://github.com/kriserickson/ai-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.2/ai-v0.1.2-darwin-amd64.tar.gz"
-      sha256 "7a8e6017ad27519bf6a90d6c2700ca0ae9a77e17157d9bd32ecc98406374b146"
+      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.3/ai-v0.1.3-darwin-amd64.tar.gz"
+      sha256 "2130338dc1e083ae06ca7994e46f67fa36c5e2dd065b612df5848be80052bc29"
 
       define_method(:install) do
         bin.install "ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.2/ai-v0.1.2-darwin-arm64.tar.gz"
-      sha256 "1f32d02970b67f80457e30b74905bca2f825228f0ecbc5f6bddd44c3a0d2c206"
+      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.3/ai-v0.1.3-darwin-arm64.tar.gz"
+      sha256 "3e50eb1fce12a831ebaf543120429b4380d597b9b4df7f99384e96551ac9a6e4"
 
       define_method(:install) do
         bin.install "ai"
@@ -29,8 +29,8 @@ class AiCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.2/ai-v0.1.2-linux-amd64.tar.gz"
-      sha256 "abdab50382b4e6f825b06e0d1f8444a91d8d545bcaed4c0801d446d7cf50bec6"
+      url "https://github.com/kriserickson/ai-cli/releases/download/v0.1.3/ai-v0.1.3-linux-amd64.tar.gz"
+      sha256 "1dbc16b5b8cbe69e67f867cbf29fd8de6cd789c4302a26f078701fa3b86688b5"
       define_method(:install) do
         bin.install "ai"
       end
